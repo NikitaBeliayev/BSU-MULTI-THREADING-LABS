@@ -1,0 +1,3 @@
+D:/BSU-MULTI-THREADING-LABS/2.Creating processes/ChildProcess/cmake-build-debug/CMakeFiles/ChildProcess.dir
+D:/BSU-MULTI-THREADING-LABS/2.Creating processes/ChildProcess/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BSU-MULTI-THREADING-LABS/2.Creating processes/ChildProcess/cmake-build-debug/CMakeFiles/rebuild_cache.dir

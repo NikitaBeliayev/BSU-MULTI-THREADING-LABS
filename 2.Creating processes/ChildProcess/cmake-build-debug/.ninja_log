@@ -1,0 +1,9 @@
+# ninja log v5
+0	328	7078750468742746	CMakeFiles/ChildProcess.dir/main.cpp.obj	7728127e2644c6ca
+329	402	7078750469461220	ChildProcess.exe	3c3917d4761e1ef0
+1	314	7078759393356700	CMakeFiles/ChildProcess.dir/main.cpp.obj	7728127e2644c6ca
+314	370	7078759393893264	ChildProcess.exe	3c3917d4761e1ef0
+2	320	7078760636721318	CMakeFiles/ChildProcess.dir/main.cpp.obj	7728127e2644c6ca
+320	375	7078760637259995	ChildProcess.exe	3c3917d4761e1ef0
+1	321	7078761123550627	CMakeFiles/ChildProcess.dir/main.cpp.obj	7728127e2644c6ca
+321	377	7078761124086200	ChildProcess.exe	3c3917d4761e1ef0
