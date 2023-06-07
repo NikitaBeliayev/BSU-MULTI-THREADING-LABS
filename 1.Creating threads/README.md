@@ -1,4 +1,4 @@
-# Laboratorian №1 (Thread creation)
+# Lab №1 (Thread creation)
 <br>
 The main purpose of this laboratory work is  learned how create threads using WINAPI library.
 
