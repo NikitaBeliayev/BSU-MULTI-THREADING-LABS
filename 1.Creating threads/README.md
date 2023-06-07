@@ -1,8 +1,8 @@
-# Laboratorian №1 (Thread creation)
+# Lab №1 (Thread creation)
 <br>
 The main purpose of this laboratory work is  learned how create threads using WINAPI library.
 
-### Task descroption:
+### Task description:
 
 1. Create an array of integers, the dimension and elements of which are entered from the console (or generate accidentally).
 2. Enter the time to stop and start the worker thread.
