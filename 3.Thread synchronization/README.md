@@ -7,29 +7,29 @@ The main goal of this lab is to learn how to synchronize threads using the criti
 ##### To complete the task, you must use the following synchronization tools: events, critical sections.
 
 1. The main thread should do the following tasks:
-    1. Initialize necessary events and critical sections
-    2. Create an array (character type), the dimension and elements of which are entered by the user from the console.
-    3. Output the dimension and elements of the original array to the console.
-    4. Enter the number k.
-    5. Start the Work thread.
-    6. Start the CountElement thread.
-    7. Recieve a signal from the work thread about the start of summation (use an event).
-    8. Display array elements.
-    9. Notify the CountElement thread about the start of summing (the start time will occur after all array elements have been displayed, use an event).
-    10. Display array elements (total up to k position).
-    11. Wait for the CountElement thread signal (use critical section).
-    12. Display the result of the CountElement thread.
+    - Initialize necessary events and critical sections
+    - Create an array (character type), the dimension and elements of which are entered by the user from the console.
+    - Output the dimension and elements of the original array to the console.
+    - Enter the number k.
+    - Start the Work thread.
+    - Start the CountElement thread.
+    - Recieve a signal from the work thread about the start of summation (use an event).
+    - Display array elements.
+    - Notify the CountElement thread about the start of summing (the start time will occur after all array elements have been displayed, use an event).
+    - Display array elements (total up to k position).
+    - Wait for the CountElement thread signal (use critical section).
+    - Display the result of the CountElement thread.
 2. The work thread should do the following tasks:
-    1. Ask the user for the time interval required to rest after preparing one element in the array;
-    2. Search in the array for elements that do not correspond to numbers or characters of the Latin alphabet (on the left
+    - Ask the user for the time interval required to rest after preparing one element in the array;
+    - Search in the array for elements that do not correspond to numbers or characters of the Latin alphabet (on the left
     put in an array, and fill the remaining elements of the array with spaces). Elements are symbols.
-    3. Display elements of the array (final) element by element;
-    4. After each finished element, rest for a specified time interval;
-    5. Notify the main thread about the beginning of the summation (use an event);
+    - Display elements of the array (final) element by element;
+    - After each finished element, rest for a specified time interval;
+    - Notify the main thread about the beginning of the summation (use an event);
 3. The CountElement thread should do the following tasks:
-    1. Waits for a message from the main thread about the beginning of the summation (use the event);
-    2. Count only the characters corresponding to the punctuation marks of the final array;
-    3. Signal the main thread to output the result (use a critical section);
+    - Waits for a message from the main thread about the beginning of the summation (use the event);
+    - Count only the characters corresponding to the punctuation marks of the final array;
+    - Signal the main thread to output the result (use a critical section);
     Creating an array and filling it with elements entered from the keyboard:
 
 ``` cpp
