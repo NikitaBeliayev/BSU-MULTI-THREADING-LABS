@@ -5,14 +5,14 @@ The main goal of this lab is to learn how to create processes using the WINAPI l
 ### Task description:
 
 1. Сreate a parent process that should do the following tasks:
-    1. Enter array size, enter array elements
-    2. Generates a command line that contains information about the array dimension, elements
-    3. For the console of the child process, sets any text color
-    4. Launches the child process Child, to which information about the dimensions of the array,elements is passed through the command line
+    - Enter array size, enter array elements
+    - Generates a command line that contains information about the array dimension, elements
+    - For the console of the child process, sets any text color
+    - Launches the child process Child, to which information about the dimensions of the array,elements is passed through the command line
 2. The child process must perform the following tasks:
-    1. Find elements in an array of numbers that are multiples of 5
-    2. Place them in the array on the left, the rest of the array elements on the right
-    3. Output the resulting array.
+    - Find elements in an array of numbers that are multiples of 5
+    - Place them in the array on the left, the rest of the array elements on the right
+    - Output the resulting array.
 
 <br>
 An example of entering array elements in the parent process:
