@@ -7,30 +7,31 @@ The main goal of this lab is to learn how to synchronize threads using the criti
 ##### To complete the task, you must use the following synchronization tools: events, critical sections.
 
 1. The main thread should do the following tasks:
-    - Initialize necessary events and critical sections
-    - Create an array (character type), the dimension and elements of which are entered by the user from the console.
-    - Output the dimension and elements of the original array to the console.
-    - Enter the number k.
-    - Start the Work thread.
-    - Start the CountElement thread.
-    - Recieve a signal from the work thread about the start of summation (use an event).
-    - Display array elements.
-    - Notify the CountElement thread about the start of summing (the start time will occur after all array elements have been displayed, use an event).
-    - Display array elements (total up to k position).
-    - Wait for the CountElement thread signal (use critical section).
-    - Display the result of the CountElement thread.
+    * Initialize necessary events and critical sections
+    * Create an array (character type), the dimension and elements of which are entered by the user from the console.
+    * Output the dimension and elements of the original array to the console.
+    * Enter the number k.
+    * Start the Work thread.
+    * Start the CountElement thread.
+    * Recieve a signal from the work thread about the start of summation (use an event).
+    * Display array elements.
+    * Notify the CountElement thread about the start of summing (the start time will occur after all array elements have been displayed, use an event).
+    * Display array elements (total up to k position).
+    * Wait for the CountElement thread signal (use critical section).
+    * Display the result of the CountElement thread.
 2. The work thread should do the following tasks:
-    - Ask the user for the time interval required to rest after preparing one element in the array;
-    - Search in the array for elements that do not correspond to numbers or characters of the Latin alphabet (on the left
+    * Ask the user for the time interval required to rest after preparing one element in the array;
+    * Search in the array for elements that do not correspond to numbers or characters of the Latin alphabet (on the left
     put in an array, and fill the remaining elements of the array with spaces). Elements are symbols.
-    - Display elements of the array (final) element by element;
-    - After each finished element, rest for a specified time interval;
-    - Notify the main thread about the beginning of the summation (use an event);
+    * Display elements of the array (final) element by element;
+    * After each finished element, rest for a specified time interval;
+    * Notify the main thread about the beginning of the summation (use an event);
 3. The CountElement thread should do the following tasks:
-    - Waits for a message from the main thread about the beginning of the summation (use the event);
-    - Count only the characters corresponding to the punctuation marks of the final array;
-    - Signal the main thread to output the result (use a critical section);
-    Creating an array and filling it with elements entered from the keyboard:
+    * Waits for a message from the main thread about the beginning of the summation (use the event);
+    * Count only the characters corresponding to the punctuation marks of the final array;
+    * Signal the main thread to output the result (use a critical section); <span class="colour" style="color:var(--vscode-markdown-wysList)"></span>
+
+Creating an array and filling it with elements entered from the keyboard:
 
 ``` cpp
 int array_size = 0;
@@ -63,22 +64,6 @@ HANDLE sum_element = CreateThread(NULL, 0, &SumElement, NULL, NULL, &sum_element
 if (worker == NULL || sum_element == NULL){ 
     return GetLastError();
 }
-```
-<br>
-Creating a string to be passed to a child process from the parent process:
-<br>
-
-``` cpp
-int j = 0;
-string temp = "";
-for (int i = 0; i < size; i++){ 
-    temp += std::to_string(array[i]);
-    if (i != size - 1){
-        temp += " ";
-    }
-}
-char* command_line = new char[temp.length() + 1];
-strcpy(command_line, temp.c_str());
 ```
 <br>
 The function that the worker thread executes:
