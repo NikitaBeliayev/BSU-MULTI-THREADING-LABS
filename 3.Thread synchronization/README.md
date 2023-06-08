@@ -1,4 +1,4 @@
-# Lab №2 (Process creation)
+# Lab №3 (Thread Synchronization)
 <br>
 The main goal of this lab is to learn how to synchronize threads using the critical sections and events of the WINAPI library.
 
