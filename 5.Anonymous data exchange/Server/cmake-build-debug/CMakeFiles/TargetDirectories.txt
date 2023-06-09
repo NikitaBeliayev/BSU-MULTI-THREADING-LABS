@@ -1,0 +1,3 @@
+D:/BSU-MULTI-THREADING-LABS/5.Anonymous data exchange/Server/cmake-build-debug/CMakeFiles/Server.dir
+D:/BSU-MULTI-THREADING-LABS/5.Anonymous data exchange/Server/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BSU-MULTI-THREADING-LABS/5.Anonymous data exchange/Server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
