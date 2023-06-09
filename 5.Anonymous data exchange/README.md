@@ -36,6 +36,7 @@ vector<int > GenerateVector(int size){
 <br>
 Creating an anonymous channel:
 <br>
+
 ``` cpp
 char lpszComLine[1000];
 HANDLE hEnableRead;
@@ -58,7 +59,7 @@ if (!CreatePipe(&hReadPipe,&hWritePipe,&sa,0)) {
 ```
 <br>
 Create client process:
-<br>
+
 ``` cpp
 ZeroMemory(&si, sizeof(STARTUPINFO));
 CloseHandle(hWritePipe);
@@ -66,19 +67,20 @@ si.cb = sizeof(STARTUPINFO);
 wsprintf(lpszComLine, "..\\..\\Client\\cmake-build-debug\\Client.exe %d %d",
  (intptr_t) hInheritWritePipe, (intptr_t) hReadPipe);
 if (!CreateProcess( NULL,
- lpszComLine,
- NULL,
- NULL,
- TRUE,
- CREATE_NEW_CONSOLE,
- NULL,
- NULL,
- &si,
- &pi)) {
- _cputs("Create process failed.\n");
- _cputs("Press any key to finish.\n");
- _getch();
- return GetLastError();
+        lpszComLine,
+        NULL,
+        NULL,
+        TRUE,
+        CREATE_NEW_CONSOLE,
+        NULL,
+        NULL,
+        &si,
+        &pi
+)) {
+    _cputs("Create process failed.\n");
+    _cputs("Press any key to finish.\n");
+    _getch();
+    return GetLastError();
 }
 CloseHandle(pi.hProcess);
 CloseHandle(pi.hThread);
@@ -88,6 +90,7 @@ _getch();
 <br>
 An example of writing and reading from an anonymous channel, at the end of the example, the result obtained from the client process is displayed:
 <br>
+
 ``` cpp
 WriteFile(hInheritWritePipe, &size ,sizeof(size), &dwBytesWritten ,NULL);
 for (int j = 0; j < vec.size(); j++) { 
@@ -161,6 +164,7 @@ for (int j = 0; j < size; j++) {
 <br>
 Running the main job and sending the results to the server process
 <br>
+
 ``` cpp
 _cputs("The process finished reading from the pipe.\n");
 int N, M;
