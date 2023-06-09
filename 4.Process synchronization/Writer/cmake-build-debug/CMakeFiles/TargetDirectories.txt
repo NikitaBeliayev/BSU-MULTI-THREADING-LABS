@@ -1,0 +1,3 @@
+D:/BSU-MULTI-THREADING-LABS/4.Process synchronization/Writer/cmake-build-debug/CMakeFiles/Writer.dir
+D:/BSU-MULTI-THREADING-LABS/4.Process synchronization/Writer/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BSU-MULTI-THREADING-LABS/4.Process synchronization/Writer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
