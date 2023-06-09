@@ -131,8 +131,10 @@ for (int i = 0; i < result.size(); i++){
 }
 ```
 <br>
+
 #### Сode examples for client process:
 <br>
+
 The client process receives information from the server and creates an array of elements received from the server:
 
 ``` cpp
