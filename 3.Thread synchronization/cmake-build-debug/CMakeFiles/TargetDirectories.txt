@@ -1,0 +1,3 @@
+D:/BSU-MULTI-THREADING-LABS/3.Thread synchronization/cmake-build-debug/CMakeFiles/3_Thread_synchronization.dir
+D:/BSU-MULTI-THREADING-LABS/3.Thread synchronization/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BSU-MULTI-THREADING-LABS/3.Thread synchronization/cmake-build-debug/CMakeFiles/rebuild_cache.dir
